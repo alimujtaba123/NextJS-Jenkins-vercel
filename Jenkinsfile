@@ -4,7 +4,6 @@ pipeline {
     environment {
         VERCEL_TOKEN = credentials('vercel_token')
     }
-
     stages {
         stage('Install') {
             steps {
@@ -13,7 +12,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Skipping tests - no test script found'
+                echo 'Skipping tests - no tests script found'
             }
         }
         stage('Build') {
